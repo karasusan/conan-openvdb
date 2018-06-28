@@ -38,7 +38,7 @@ class OpenVDBConan(ConanFile):
                     pkg_opts.fPIC = True
 
         # Exclude Boost components which are not needed.
-        boost_options = self.options["Boost"]
+        boost_options = self.options["boost"]
         for boost_option in boost_options.fields:
             if not boost_option.startswith("without_"):
                 continue

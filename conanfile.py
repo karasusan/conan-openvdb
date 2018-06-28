@@ -59,7 +59,7 @@ class OpenVDBConan(ConanFile):
 
     def build(self):
         os.environ.update(
-            { "BOOST_ROOT": self.deps_cpp_info["Boost"].rootpath
+            { "BOOST_ROOT": self.deps_cpp_info["boost"].rootpath
             , "TBB_ROOT": self.deps_cpp_info["TBB"].rootpath
             , "BLOSC_ROOT": self.deps_cpp_info["blosc"].rootpath
             , "ILMBASE_ROOT": self.deps_cpp_info["IlmBase"].rootpath

@@ -24,6 +24,8 @@ class OpenVDBConan(ConanFile):
               }
     default_options = "shared=False", "fPIC=False"
     exports = ["CMakeLists.txt", "fix-FindTBB-module.patch"]
+    build_policy = "missing"
+
 
     def config_options(self):
         if self.settings.os == "Windows":

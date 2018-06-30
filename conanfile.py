@@ -12,7 +12,7 @@ class OpenVDBConan(ConanFile):
     requires = ( "boost/1.67.0@conan/stable"
                , "TBB/4.4.4@conan/stable"
                , "blosc/1.11.2@zogi/stable"
-               , "zlib/1.2.8@conan/stable"
+               , "zlib/1.2.11@conan/stable"
                , "IlmBase/2.2.0@Mikayex/stable"
                , "OpenEXR/2.2.0@Mikayex/stable"
                )

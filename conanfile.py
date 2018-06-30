@@ -9,7 +9,7 @@ class OpenVDBConan(ConanFile):
     license = "MPL-2.0"
     description = "OpenVDB is an open source C++ library comprising a novel hierarchical data structure and a large suite of tools for the efficient storage and manipulation of sparse volumetric data discretized on three-dimensional grids."
     url = "https://github.com/zogi/conan-openvdb"
-    requires = ( "Boost/1.60.0@lasote/stable"
+    requires = ( "boost/1.67.0@conan/stable"
                , "TBB/4.4.4@conan/stable"
                , "blosc/1.11.2@zogi/stable"
                , "zlib/1.2.8@conan/stable"

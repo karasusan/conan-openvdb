@@ -24,7 +24,7 @@ class OpenVDBConan(ConanFile):
               }
     default_options = "shared=False", "fPIC=False"
     exports = ["CMakeLists.txt", "fix-FindTBB-module.patch"]
-    build_policy = "missing"
+    build_policy = "always"
 
 
     def config_options(self):

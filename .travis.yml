@@ -6,7 +6,6 @@ env:
      - CONAN_LOGIN_USERNAME: "kazuki"
      - CONAN_CHANNEL: "development"
      - CONAN_UPLOAD: "https://api.bintray.com/conan/kazuki/conan"
-     - CONAN_REMOTES: "https://api.bintray.com/conan/kazuki/conan"
 
 linux: &linux
    os: linux

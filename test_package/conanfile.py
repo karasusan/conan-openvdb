@@ -3,7 +3,7 @@ from conans import CMake
 import os
 
 channel = os.getenv("CONAN_CHANNEL", "testing")
-username = os.getenv("CONAN_USERNAME", "zogi")
+username = os.getenv("CONAN_USERNAME", "kazuki")
 
 
 class DefaultNameConan(ConanFile):

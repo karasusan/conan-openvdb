@@ -14,7 +14,7 @@ class OpenVDBConan(ConanFile):
                , "blosc/1.11.2@kazuki/stable"
                , "zlib/1.2.11@conan/stable"
                , "IlmBase/2.2.0@kazuki/stable"
-               , "OpenEXR/2.2.0@Mikayex/stable"
+               , "OpenEXR/2.2.0@kazuki/stable"
                )
     boost_components_needed = "iostreams", "system", "thread"
     generators = "cmake"

@@ -11,7 +11,7 @@ class OpenVDBConan(ConanFile):
     url = "https://github.com/karasusan/conan-openvdb"
     requires = ( "boost/1.67.0@conan/stable"
                , "TBB/4.4.4@kazuki/stable"
-               , "blosc/v1.13.7@kazuki/stable"
+               , "blosc/1.11.2@kazuki/stable"
                , "zlib/1.2.11@conan/stable"
                , "IlmBase/2.2.0@kazuki/stable"
                , "OpenEXR/2.2.0@Mikayex/stable"

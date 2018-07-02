@@ -8,6 +8,10 @@ class DefaultNameConan(ConanFile):
     settings = "os", "compiler", "arch", "build_type"
     generators = "cmake"
 
+    def configure(self):
+        # TBB.shared is True when it is default.
+        self.options["TBB"].shared = False
+
     def build(self):
         cmake = CMake(self)
         cmake.configure()

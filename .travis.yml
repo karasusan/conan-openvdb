@@ -39,3 +39,8 @@ install:
 script:
   - chmod +x .travis/run.sh
   - ./.travis/run.sh
+
+notifications:
+  email: false
+  slack:
+    secure: "CtdLjx4HbkZfKHliEe/qm9RhpbKUexcc8C3pkAwksaBS0w982iHylZrlWDfm/5CTAUST9oVmnOhqUvg6VIjEH36xffjStSI3fkxiIWgbsAAra7Zl8st/H76SKtkq1ucSSbnbCqRaiX4Ag8tdaxT95Ebr92Az9bwmhQl2S8uRscX6+TkSwNCX9aDJZFa7qIME+QYMV3N4vMmgyYHCXAYfsrgNk/TSisNz+GqpcpPN2jTAcJYTXAXqkNLh9PJbc4NoNUwLEuoiAsCjPzFuQgsDY/F6g9gcF4yJnts9/YhlstcLXfkkFOm5+2knK5ULj+4VJZS0B0E8G/Cgmr9CMKXYpgQIAR8NytLRCQMmOr36a/FDhvlVg+U1SO+ubfvHNDQn9donyyv+elj35fO1cleRKgJ7IoA+siWKYEKGsbex065cptcg/vVahs+DavnZfK4k60Ofw/Fn4iDxaDPKw2AMkk8QhS97NTEB1JmH7mMw6qunQsgrp9OSyFGxrpeJj+RSgHRT6iK6Kv71qBUlvPh+ykfeFZELD1+JMjSjz7+5FqcIf2NcezmmdvSUJjZupS4EjDInkvugV2kvzrsKbwI7azXPR+/HFPYrXTgHpDzYFfgik3yuN3piCYmFwgb7WCM4+YQ0g55Zr5bTZpNM2rABTYomDpFbuGgagkX4Yb+LHiA="

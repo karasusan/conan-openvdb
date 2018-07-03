@@ -48,6 +48,12 @@ class OpenVDBConan(ConanFile):
             if component not in self.boost_components_needed:
                 boost_options.add_option(boost_option, True)
 
+        # Intel-TBB does not support static linking in Windows
+        if self.settings.os == "Windows":
+            self.options["TBB"].shared = True
+        else:
+            self.options["TBB"].shared = False
+
     def source(self):
         self.run("git clone https://github.com/dreamworksanimation/openvdb src")
         self.run("cd src && git checkout v%s" % self.version)

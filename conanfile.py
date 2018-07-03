@@ -20,7 +20,7 @@ class OpenVDBConan(ConanFile):
     generators = "cmake"
     settings = "os", "arch", "compiler", "build_type"
     options = { "shared": [True, False]
-              , "fPIC": True
+              , "fPIC": [True]
               }
     default_options = "shared=False", "fPIC=True"
     exports = ["CMakeLists.txt", "fix-FindTBB-module.patch"]

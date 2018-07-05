@@ -8,9 +8,9 @@ if __name__ == "__main__":
     # exclude packages that is dynamic library for Windows/Linux
     filtered_builds = []
     for settings, options, env_vars, build_requires, reference in builder.items:
-        if platform.system() == "Windows" and not options["OpenVDB:shared"]:
+        if platform.system() == "Windows" and options["OpenVDB:shared"]:
         	continue
-        if platform.system() == "Linux" and not options["OpenVDB:shared"]:
+        if platform.system() == "Linux" and options["OpenVDB:shared"]:
         	continue
         filtered_builds.append([settings, options, env_vars, build_requires])
     builder.builds = filtered_builds    

@@ -13,10 +13,11 @@ environment:
     CONAN_UPLOAD: "https://api.bintray.com/conan/kazuki/conan"
 
     matrix:
-       - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-         CONAN_VISUAL_VERSIONS: 12
-         CONAN_VISUAL_RUNTIMES: "MD"
-         CONAN_BUILD_TYPES: Release
+# fix build error      
+#       - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+#         CONAN_VISUAL_VERSIONS: 12
+#         CONAN_VISUAL_RUNTIMES: "MD"
+#         CONAN_BUILD_TYPES: Release
 
        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
          CONAN_VISUAL_VERSIONS: 14
